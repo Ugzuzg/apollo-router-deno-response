@@ -8,6 +8,6 @@ router:
 run: node_modules router
 	node s1 & node s2 & node s3 &
 	npx rover supergraph compose --config supergraph.yaml > schema.gql
-	./router --supergraph schema.gql
+	./router --dev --supergraph schema.gql --config config.yaml
 
 .PHONY: run

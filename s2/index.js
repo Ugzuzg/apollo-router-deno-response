@@ -21,13 +21,15 @@ const resolver = {
     __resolveReference: (reference) => {
       return {
         id: reference,
+        name: 'cool name',
+        type: 'type',
       };
     }
   },
   Query: {
     brands: () => ([
-      { id: '1', name: 'a' },
-      { id: '2', name: 'b' },
+      { id: '1', name: 'a', type: 'ttt' },
+      { id: '2', name: 'b', type: 'ttt' },
     ])
   }
 }
